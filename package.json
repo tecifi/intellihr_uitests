@@ -1,0 +1,30 @@
+{
+  "name": "intellihr_uitests",
+  "version": "1.0.0",
+  "description": "Cypress UI Tests for IntelliHR",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tecifi/intellihr_uitests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tecifi/intellihr_uitests/issues"
+  },
+  "homepage": "https://github.com/tecifi/intellihr_uitests#readme",
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.1.0",
+    "cypress-xpath": "^1.6.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "cypress": "^6.8.0"
+  }
+}
