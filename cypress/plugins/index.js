@@ -1,3 +1,4 @@
+const fs = require('fs');
 /// <reference types="cypress" />
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
@@ -20,4 +21,16 @@ const cucumber = require('cypress-cucumber-preprocessor').default
 
 module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
+  on('task', {
+    // deconstruct the individual properties
+    fileCheck({ dirname}) {
+      fs.readdir(dirname, (err, files) => {
+        if (err || !files) {
+          console.error('File Download Failed');
+        }
+        return null
+      }
+      )
+    }
+  })
 }

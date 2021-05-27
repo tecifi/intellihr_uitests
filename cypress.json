@@ -3,5 +3,6 @@
     "defaultCommandTimeout": 30000,
     "pageLoadTimeout": 60000,
     "retries":3,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "video":false
 }
