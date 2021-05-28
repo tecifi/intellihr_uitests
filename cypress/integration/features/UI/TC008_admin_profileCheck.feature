@@ -9,7 +9,7 @@ So that I can view and update profile
 
     When I enter "Admin" user credentials
     And I click on button "Sign In"
-    Then I should see the header "Good afternoon"
+    Then I should see the header "Wendy"
 
     When I click on sidebar menu "My Profile"
     Then I should see the section header "Personal Information"

@@ -31,7 +31,7 @@ And('current url should contain {string}', (url) => {
 })
 
 // Clicking a button having a button text, Input button text to this step.
-And('I click on button {string}', (buttonText) =>{
+And('I click on button {string}', (buttonText) => {
   cy.xpath(`//button[contains(text(),'${buttonText}')]`).click({ force: true });
 })
 
@@ -47,6 +47,11 @@ Then('I should see the section header {string}', (headerText) => {
 
 // Wait for specific seconds. Input time in seconds to this step.
 Then('I wait for {string} seconds', (waitTime) => {
-  const timeDelay = parseInt(waitTime)*1000;
+  const timeDelay = parseInt(waitTime) * 1000;
   cy.wait(timeDelay);
+})
+
+// Viewing a button having sepcific button text, Input button text to this step.
+And('I should see the button {string}', (buttonText) => {
+  cy.xpath(`//button[contains(text(),'${buttonText}')]`).should('be.visible');
 })
