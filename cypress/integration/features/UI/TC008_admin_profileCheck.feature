@@ -1,4 +1,4 @@
-Feature: As a admin user
+Feature: As an Admin user
 I want to navigate to Profile Page
 So that I can view and update profile
 
