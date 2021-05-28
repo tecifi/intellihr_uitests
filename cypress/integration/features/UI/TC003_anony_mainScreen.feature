@@ -1,4 +1,4 @@
-Feature: As a non-logged in user
+Feature: As an Anonymous user
 I want to visit settings page
 So that I should be navigated to login page
 

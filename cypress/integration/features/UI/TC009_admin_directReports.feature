@@ -1,4 +1,4 @@
-Feature: As a manager user
+Feature: As a Manager user
 I want to navigate to People Page
 So that I can see the direct reports of a manager
 
@@ -9,6 +9,11 @@ So that I can see the direct reports of a manager
 
     When I enter "Manager" user credentials
     And I click on button "Sign In"
-    And I click on hyperlink with text "Job"
+    Then I should see the section header "Personal Information"
+
+    When I click on hyperlink with text "Job"
     Then I should see the button "Job Actions"
-    #And I should see direct reports "a" and "b"
+
+    When I scroll to section header "Reporting"
+    Then "Reassign Direct Reports" link should be visible
+    And "Stefan Borrow" and "Eugene Naidoo" should be listed as direct reports
