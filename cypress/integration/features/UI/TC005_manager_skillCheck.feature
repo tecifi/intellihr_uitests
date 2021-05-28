@@ -30,3 +30,12 @@ So that I should be able to create skill
     And I enter "Sample test description" in "Skill Description"
     And I click on button "Save"
     Then I should see New Skill created alert
+
+#  Manager Deleting Administration Skill
+    When I enter above Skill in Search
+    And I click on "Delete" icon button
+    Then I should see the modal header "Deleting Skill"
+
+    When I click on button "Delete"
+    Then I should see the alert "The selected skill has successfully been deleted"
+    Then I should not see Skill in Search

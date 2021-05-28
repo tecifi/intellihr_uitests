@@ -9,5 +9,5 @@ So that I should see the login page <tenant>/auth/login
 
     When I enter "Normal" user credentials
     And I click on button "Sign In"
-    Then I should see the header "Good afternoon, Charlie"
+    Then I should see the header "Charlie"
     And "Dashboard" link should be visible

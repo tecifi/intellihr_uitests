@@ -22,15 +22,19 @@ const cucumber = require('cypress-cucumber-preprocessor').default
 module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
   on('task', {
-    // deconstruct the individual properties
-    fileCheck({ dirname}) {
-      fs.readdir(dirname, (err, files) => {
-        if (err || !files) {
-          console.error('File Download Failed');
+    // Read file directory and check if it is empty.
+    fileCheck({ dirname }) {
+      return new Promise((resolve, reject) => {
+        fs.readdir(dirname, (err, files) => {
+          if (err || !files) {
+            return reject(err)
+          }
+          resolve(null)
         }
-        return null
+        )
       }
       )
     }
-  })
+  }
+  )
 }
