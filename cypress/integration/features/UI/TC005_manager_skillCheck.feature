@@ -19,7 +19,7 @@ So that I should be able to create skill
     And I select "Accounting" for "Skill Discipline"
     And I enter "Sample test description" in "Skill Description"
     And I click on button "Save"
-    Then I should see New Skill created alert
+    Then I should see the alert "New skill has successfully been created"
 
 #   Manager Creating Administration Skill
     When I click on link "Create Skill"
@@ -29,7 +29,7 @@ So that I should be able to create skill
     And I select "Administration" for "Skill Discipline"
     And I enter "Sample test description" in "Skill Description"
     And I click on button "Save"
-    Then I should see New Skill created alert
+    Then I should see the alert "New skill has successfully been created"
 
 #  Manager Deleting Administration Skill
     When I enter above Skill in Search
