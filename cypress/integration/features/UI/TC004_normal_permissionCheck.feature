@@ -1,4 +1,4 @@
-Feature: As a normal user
+Feature: As a Normal user
 I want to make sure that I cannot access edit configuration
 So that my permission is set correctly
 
