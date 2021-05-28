@@ -1,10 +1,13 @@
 Then('I click on {string} in {string}', (iconButton, buttonText) => {
-    cy.xpath(`//button[contains(text(),'${iconButton}')]`).click({ force: true });
-    cy.xpath(`//a/div/div[contains(text(),'${buttonText}')]`).click({ force: true });
+    cy.xpath(`//button[contains(text(),'${buttonText}')]`).should('be.visible');
+    cy.xpath(`//button[contains(text(),'${buttonText}')]`).click({ force: true });
+    cy.xpath(`//a/div/div[contains(text(),'${iconButton}')]`).click({ force: true });
 })
 
 Then('file download should be successful', () => {
     const downloadsFolder = Cypress.config("downloadsFolder");
+    // Wait for 6 seconds for download to complete
+    cy.wait(6000);
     cy.task('fileCheck',{dirName: downloadsFolder})
 })
 

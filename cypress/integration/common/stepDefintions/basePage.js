@@ -39,3 +39,14 @@ And('I click on button {string}', (buttonText) =>{
 Then('I should see the section header {string}', (headerText) => {
   cy.xpath(`//h2[contains(text(),'${headerText}')]`).should('be.visible');
 })
+
+// Scroll to a specific h2 header, Input h2 header text to this step.
+Then('I should see the section header {string}', (headerText) => {
+  cy.xpath(`//h2[contains(text(),'${headerText}')]`).scrollIntoView();
+})
+
+// Wait for specific seconds. Input time in seconds to this step.
+Then('I wait for {string} seconds', (waitTime) => {
+  const timeDelay = parseInt(waitTime)*1000;
+  cy.wait(timeDelay);
+})
