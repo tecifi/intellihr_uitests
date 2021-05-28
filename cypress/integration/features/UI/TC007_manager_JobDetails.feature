@@ -1,4 +1,4 @@
-Feature: As a manager user
+Feature: As a Manager user
 I want to visit job page
 So that I should be able to view Remuneration details
 

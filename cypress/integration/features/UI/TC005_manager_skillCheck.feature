@@ -1,6 +1,6 @@
-Feature: As a manager user
-I want to visit <tenant>/spa/settings/skills
-So that I should be able to create skill
+Feature: As a Manager user
+I want to visit Skills Page
+So that I should be able to create and delete Skill
 
   Scenario: Manager Creating Accounting and Administration Skill
     When I visit 'https://qa-tech-test-demo.uat.internihr.ninja/spa/settings/skills'

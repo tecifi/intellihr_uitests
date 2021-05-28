@@ -23,10 +23,10 @@ module.exports = (on, config) => {
   on('file:preprocessor', cucumber())
   on('task', {
     // Read file directory and check if it is empty.
-    fileCheck({ dirname }) {
+    fileCheck({dirname}) {
       return new Promise((resolve, reject) => {
         fs.readdir(dirname, (err, files) => {
-          if (err || !files) {
+          if (err || files.length < 1) {
             return reject(err)
           }
           resolve(null)

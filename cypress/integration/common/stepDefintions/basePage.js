@@ -41,7 +41,7 @@ Then('I should see the section header {string}', (headerText) => {
 })
 
 // Scroll to a specific h2 header, Input h2 header text to this step.
-Then('I should see the section header {string}', (headerText) => {
+Then('I scroll to section header {string}', (headerText) => {
   cy.xpath(`//h2[contains(text(),'${headerText}')]`).scrollIntoView();
 })
 

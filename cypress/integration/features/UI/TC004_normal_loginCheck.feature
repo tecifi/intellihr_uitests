@@ -1,6 +1,6 @@
-Feature: As a non-logged in user
-I want to visit <tenant>/spa/settings
-So that I should see the login page <tenant>/auth/login
+Feature: As a Normal user
+I want to dashboard page
+So that I can verify that dashboard page is loaded correctly
 
   Scenario: Navigating to Tenant site
     When I visit 'https://qa-tech-test-demo.uat.internihr.ninja/auth/login'
