@@ -1,4 +1,4 @@
-Feature: As a admin user
+Feature: As an Admin user
 I want to navigate to People Page
 So that I can export a report of the people
 
