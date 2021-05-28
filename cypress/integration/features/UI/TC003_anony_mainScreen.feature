@@ -1,6 +1,6 @@
 Feature: As a non-logged in user
-I want to visit <tenant>/spa/settings
-So that I should see the login page <tenant>/auth/login
+I want to visit settings page
+So that I should be navigated to login page
 
   Scenario: Navigating to Tenant site
     When I visit 'https://qa-tech-test-demo.uat.internihr.ninja/spa/settings'

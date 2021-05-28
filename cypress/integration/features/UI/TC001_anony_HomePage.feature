@@ -1,8 +1,8 @@
-Feature: As an anonymous user
+Feature: As an Anonymous user
 I want to navigate to intellihr site
 So that i can verify homepage and title
 
-  Scenario: Navigating to Intellihr site
+  Scenario: Navigating to Intellihr site as Anonymous User
     When I visit 'https://www.intellihr.com'
     Then I should see the title "intelliHR"
-    And Verify 'intelliHR' logo is visible
+    And 'intelliHR' logo is visible

@@ -4,7 +4,8 @@
   "description": "Cypress UI Tests for IntelliHR",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cypress run --browser chrome"
+    "test": "./node_modules/.bin/cypress run --browser chrome",
+    "ci": "./node_modules/.bin/cypress run --browser chrome --headless"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-Feature: As an anonymous user
+Feature: As an Anonymous user
 I want to navigate to intellihr careers page
 So that i can verify that i am navigated to seek job page once i click on job
 
@@ -10,4 +10,4 @@ So that i can verify that i am navigated to seek job page once i click on job
     When I click on hyperlink with text "CURRENT VACANCIES"
     And I click on "View Job Description" for "Quality Assurance Engineer II"
     And I click on hyperlink with text "APPLY NOW"
-    Then I should be navigated to Seek Page
+    Then current url should contain "https://www.seek.com.au/job"
