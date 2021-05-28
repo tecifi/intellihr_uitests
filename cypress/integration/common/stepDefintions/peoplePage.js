@@ -5,7 +5,7 @@ Then('I click on {string} in {string}', (iconButton, buttonText) => {
 
 Then('file download should be successful', () => {
     const downloadsFolder = Cypress.config("downloadsFolder");
-    cy.task('fileCheck',{ downloadsFolder})
+    cy.task('fileCheck',{dirName: downloadsFolder})
 })
 
 When('I click Edit Icon Button on {string} Section', (sectionName) => {
