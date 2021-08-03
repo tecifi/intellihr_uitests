@@ -19,13 +19,14 @@
   },
   "homepage": "https://github.com/tecifi/intellihr_uitests#readme",
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.1.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
     "cypress-xpath": "^1.6.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
   },
   "dependencies": {
-    "cypress": "^6.8.0"
+    "cypress": "^9.3.0",
+    "glob-parent": "^6.0.1"
   }
 }
