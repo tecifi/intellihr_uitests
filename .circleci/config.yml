@@ -11,6 +11,4 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/run:
-          parallel: true # split all specs across machines
-          parallelism: 3
+      - cypress/run
